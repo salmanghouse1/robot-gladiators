@@ -1,9 +1,38 @@
 //Greet the user
 
+const robotNames = ["Spartacus", "Marcus Attilius", "Tetraites", "Spiculus"];
+const robotHealth = ["70", "80", "90", "100"];
+
+let playerHealth = "100";
+let playerMoney = "200";
 alert("Hello, Welcome to Robot Gladiators");
+var whatIsYourName = window.prompt("Gladius");
 
 
-//array of different robots with different stats such as health, money, attack power
+var getRandomRobot = function() {
+    var robot = robotNames[Math.floor(Math.random() * colors.length)]
+    return robot;
+}
+
+var start = function() {
+
+        while (playerHealth > 0) {
+
+            var fightOrSkip = window.prompt("You are facing" + robot + "Do you want to FIGHT or SKIP. Type your request");
+
+
+            if (fightOrSkip === "FIGHT" || fightOrSkip === "fight") {
+
+            } else if (fightOrSkip === "SKIP" || fightOrSkip === "skip") {
+
+            } else {
+                start()
+            }
+
+        }
+
+    }
+    //array of different robots with different stats such as health, money, attack power
 
 //player health at start is 100
 
