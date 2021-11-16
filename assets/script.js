@@ -18,7 +18,7 @@ var start = function() {
 
         while (playerHealth > 0) {
 
-            var fightOrSkip = window.prompt("You are facing" + robot + "Do you want to FIGHT or SKIP. Type your request");
+            var fightOrSkip = window.prompt("You are facing " + robot + " Do you want to FIGHT or SKIP. Type your request");
 
 
             if (fightOrSkip === "FIGHT" || fightOrSkip === "fight") {
@@ -26,7 +26,7 @@ var start = function() {
             } else if (fightOrSkip === "SKIP" || fightOrSkip === "skip") {
 
             } else {
-                start()
+                start();
             }
 
         }
