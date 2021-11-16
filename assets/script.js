@@ -1,5 +1,8 @@
 //Greet the user
 
+alert("Hello, Welcome to Robot Gladiators");
+
+
 //array of different robots with different stats such as health, money, attack power
 
 //player health at start is 100
